@@ -10,6 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Diary">
         <activity
+            android:name=".Insert"
+            android:exported="true" />
+        <activity
+            android:name=".Home"
+            android:exported="true"
+            android:label="@string/title_activity_home" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
