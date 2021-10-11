@@ -14,7 +14,7 @@
         android:padding="10sp">
 
         <ImageButton
-            android:id="@+id/PostBack"
+            android:id="@+id/A00_Back"
             android:layout_width="40sp"
             android:layout_height="40sp"
             android:background="?actionBarItemBackground"
@@ -33,18 +33,73 @@
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/PostDone"
+            android:id="@+id/A00_Done"
             android:layout_width="40sp"
             android:layout_height="40sp"
             android:background="?actionBarItemBackground"
             android:src="@drawable/done" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingLeft="10sp"
-        android:paddingRight="10sp">
+        android:paddingLeft="14sp"
+        android:paddingRight="14sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="25"
+            android:textColor="@color/accent_001"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingLeft="10sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="August, 2021"
+                android:layout_gravity="bottom"
+                android:textColor="@color/grey_001"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Saturday"
+                android:textColor="@color/grey_001"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed"
+            android:text="6:00 pm"
+            android:gravity="bottom"
+            android:padding="10sp"
+            android:textColor="@color/grey_001"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10sp"
+        android:paddingLeft="14sp"
+        android:paddingRight="14sp">
 
         <TextView
             android:layout_width="match_parent"
@@ -52,29 +107,269 @@
             android:layout_weight="1"
             android:fontFamily="sans-serif-condensed"
             android:gravity="center_vertical"
-            android:text="My Day"
+            android:text="About my day"
             android:textColor="@color/grey_001"
+            android:drawableStart="@drawable/left"
             android:textSize="12sp" />
         <ImageButton
+            android:id="@+id/A00_Star100"
             android:layout_width="40sp"
             android:layout_height="40sp"
+            android:visibility="invisible"
             android:background="?selectableItemBackground"
             android:src="@drawable/star_01"/>
         <ImageButton
+            android:id="@+id/A00_Star101"
             android:layout_width="40sp"
             android:layout_height="40sp"
+            android:visibility="invisible"
             android:background="?selectableItemBackground"
             android:src="@drawable/star_01"/>
         <ImageButton
+            android:id="@+id/A00_Star102"
             android:layout_width="40sp"
             android:layout_height="40sp"
+            android:visibility="invisible"
             android:background="?selectableItemBackground"
             android:src="@drawable/star_01"/>
         <ImageButton
-            android:id="@+id/PostDown"
+            android:id="@+id/A00_Down"
             android:layout_width="40sp"
             android:layout_height="40sp"
+            android:visibility="invisible"
             android:background="?actionBarItemBackground"
             android:src="@drawable/down" />
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/A00_Layout001"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:paddingLeft="14sp"
+        android:paddingRight="14sp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="14sp"
+            android:gravity="top"
+            android:textColor="@color/grey_001"
+            android:maxLength="512"
+            android:minHeight="80sp"
+            android:hint="Happiness is acceptance ..."
+            android:textColorHint="#55000000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical"
+            android:text="Today's Rating"
+            android:textColor="@color/grey_001"
+            android:drawableStart="@drawable/left"
+            android:textSize="12sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:button="@drawable/star_switch_10"/>
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:button="@drawable/star_switch_10"/>
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:button="@drawable/star_switch_10"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="Keep track of your days rating by clicking the star"
+            android:textColor="@color/grey_001"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14sp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_vertical"
+        android:text="Today's Activity"
+        android:textColor="@color/grey_001"
+        android:drawableStart="@drawable/left"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/A00Switch001"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/a_01_health"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:background="@color/design_default_color_background"/>
+        <ImageButton
+            android:id="@+id/A00Switch002"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/a_02_exercise"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:background="@color/design_default_color_background"/>
+        <ImageButton
+            android:id="@+id/A00Switch003"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/a_03_book"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:background="@color/design_default_color_background"/>
+        <ImageButton
+            android:id="@+id/A00Switch004"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/a_04_entertainment"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:background="@color/design_default_color_background"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/grey_002"
+            android:textSize="10sp"
+            android:text="Health"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/grey_002"
+            android:textSize="10sp"
+            android:text="Exercise"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/grey_002"
+            android:textSize="10sp"
+            android:text="Knowledge"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/grey_002"
+            android:textSize="10sp"
+            android:text="Entertainment"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <View
+            android:id="@+id/A00_Icon_001"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:background="@color/icon_001"/>
+        <View
+            android:id="@+id/A00_Icon_002"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:background="@color/icon_002"/>
+        <View
+            android:id="@+id/A00_Icon_003"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:background="@color/icon_003"/>
+        <View
+            android:id="@+id/A00_Icon_004"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:background="@color/icon_004"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/A00_Layout002"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/A00_Layout003"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/A00_Layout004"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/A00_Layout005"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
 </LinearLayout>
