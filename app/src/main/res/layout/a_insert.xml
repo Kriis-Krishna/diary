@@ -149,17 +149,28 @@
         android:orientation="vertical"
         android:paddingLeft="14sp"
         android:paddingRight="14sp">
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed"
-            android:textSize="14sp"
-            android:gravity="top"
-            android:textColor="@color/grey_001"
-            android:maxLength="512"
-            android:minHeight="80sp"
-            android:hint="Happiness is acceptance ..."
-            android:textColorHint="#55000000"/>
+            android:layout_margin="14sp"
+            app:counterTextAppearance="@style/QText"
+            app:startIconDrawable="@drawable/a_16_notes"
+            app:hintEnabled="false"
+            app:counterMaxLength="512"
+            app:counterEnabled="true"
+            app:errorEnabled="false">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:paddingTop="10sp"
+                android:textColor="@color/grey_001"
+                android:background="?android:colorBackground"
+                android:maxLength="512"
+                android:hint="Happiness is acceptance ..."/>
+        </com.google.android.material.textfield.TextInputLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40sp"
@@ -178,23 +189,22 @@
             <androidx.appcompat.widget.AppCompatCheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="10sp"
+                android:layout_margin="5sp"
                 android:button="@drawable/star_switch_10"/>
             <androidx.appcompat.widget.AppCompatCheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="10sp"
+                android:layout_margin="5sp"
                 android:button="@drawable/star_switch_10"/>
             <androidx.appcompat.widget.AppCompatCheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="10sp"
+                android:layout_margin="5sp"
                 android:button="@drawable/star_switch_10"/>
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:fontFamily="sans-serif-condensed"
             android:gravity="center"
             android:padding="10sp"
@@ -226,7 +236,7 @@
             android:src="@drawable/a_01_health"
             android:layout_weight="1"
             android:scaleType="fitCenter"
-            android:background="@color/design_default_color_background"/>
+            android:background="?android:colorBackground"/>
         <ImageButton
             android:id="@+id/A00Switch002"
             android:layout_width="50sp"
@@ -234,7 +244,7 @@
             android:src="@drawable/a_02_exercise"
             android:layout_weight="1"
             android:scaleType="fitCenter"
-            android:background="@color/design_default_color_background"/>
+            android:background="?android:colorBackground"/>
         <ImageButton
             android:id="@+id/A00Switch003"
             android:layout_width="50sp"
@@ -242,7 +252,7 @@
             android:src="@drawable/a_03_book"
             android:layout_weight="1"
             android:scaleType="fitCenter"
-            android:background="@color/design_default_color_background"/>
+            android:background="?android:colorBackground"/>
         <ImageButton
             android:id="@+id/A00Switch004"
             android:layout_width="50sp"
@@ -250,7 +260,7 @@
             android:src="@drawable/a_04_entertainment"
             android:layout_weight="1"
             android:scaleType="fitCenter"
-            android:background="@color/design_default_color_background"/>
+            android:background="?android:colorBackground"/>
     </LinearLayout>
 
     <LinearLayout
@@ -259,6 +269,7 @@
         android:orientation="horizontal"
         android:gravity="center">
         <TextView
+            android:id="@+id/InsertOption01"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -268,6 +279,7 @@
             android:textSize="10sp"
             android:text="Health"/>
         <TextView
+            android:id="@+id/InsertOption02"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -277,6 +289,7 @@
             android:textSize="10sp"
             android:text="Exercise"/>
         <TextView
+            android:id="@+id/InsertOption03"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -286,6 +299,7 @@
             android:textSize="10sp"
             android:text="Knowledge"/>
         <TextView
+            android:id="@+id/InsertOption04"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -308,7 +322,7 @@
             android:visibility="invisible"
             android:layout_marginLeft="5sp"
             android:layout_marginRight="5sp"
-            android:background="@color/icon_001"/>
+            android:background="@color/accent_001"/>
         <View
             android:id="@+id/A00_Icon_002"
             android:layout_width="match_parent"
@@ -317,7 +331,7 @@
             android:visibility="invisible"
             android:layout_marginLeft="5sp"
             android:layout_marginRight="5sp"
-            android:background="@color/icon_002"/>
+            android:background="@color/accent_001"/>
         <View
             android:id="@+id/A00_Icon_003"
             android:layout_width="match_parent"
@@ -326,7 +340,7 @@
             android:visibility="invisible"
             android:layout_marginLeft="5sp"
             android:layout_marginRight="5sp"
-            android:background="@color/icon_003"/>
+            android:background="@color/accent_001"/>
         <View
             android:id="@+id/A00_Icon_004"
             android:layout_width="match_parent"
@@ -335,41 +349,291 @@
             android:visibility="invisible"
             android:layout_marginLeft="5sp"
             android:layout_marginRight="5sp"
-            android:background="@color/icon_004"/>
+            android:background="@color/accent_001"/>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/A00_Layout002"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/A00_Layout002"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:paddingTop="10sp"
+                    android:text="Keep track of your daily health"
+                    android:textColor="@color/grey_001"
+                    android:textSize="12sp" />
 
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/A00_Layout003"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone"
-        android:orientation="vertical">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="14sp"
+                    app:counterTextAppearance="@style/QText"
+                    app:startIconDrawable="@drawable/a_11_health"
+                    app:hintEnabled="false"
+                    app:counterMaxLength="256"
+                    app:counterEnabled="true"
+                    app:errorEnabled="false">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical"
+                        android:paddingTop="10sp"
+                        android:textColor="@color/grey_001"
+                        android:background="?android:colorBackground"
+                        android:maxLength="256"
+                        android:hint="How are you feeling today?"/>
+                </com.google.android.material.textfield.TextInputLayout>
 
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/A00_Layout004"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone"
-        android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="Meals taken for the day"
+                    android:paddingBottom="10sp"
+                    android:textColor="@color/grey_001"
+                    android:textSize="12sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="12sp"
+                        android:textColor="@color/grey_002"
+                        android:padding="8sp"
+                        android:layout_margin="5sp"
+                        android:gravity="center"
+                        android:background="@drawable/border_line"
+                        android:text="Breakfast"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="12sp"
+                        android:textColor="@color/grey_002"
+                        android:padding="8sp"
+                        android:layout_margin="5sp"
+                        android:gravity="center"
+                        android:background="@drawable/border_line"
+                        android:text="Brunch"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="12sp"
+                        android:textColor="@color/grey_002"
+                        android:padding="8sp"
+                        android:layout_margin="5sp"
+                        android:gravity="center"
+                        android:background="@drawable/border_line"
+                        android:text="Lunch"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="12sp"
+                        android:textColor="@color/grey_002"
+                        android:padding="8sp"
+                        android:layout_margin="5sp"
+                        android:gravity="center"
+                        android:background="@drawable/border_line"
+                        android:text="Dinner"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="Drinks taken for the day"
+                    android:padding="10sp"
+                    android:textColor="@color/grey_001"
+                    android:textSize="12sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="60sp"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/a_10_tea"
+                        android:clickable="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="?selectableItemBackground"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@color/grey_002"
+                        android:textSize="10sp"
+                        android:text="Tea"/>
+                    <TextView
+                        android:layout_width="60sp"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/a_19_drinks"
+                        android:clickable="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="?selectableItemBackground"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@color/grey_002"
+                        android:textSize="10sp"
+                        android:text="Drinks"/>
+                    <TextView
+                        android:layout_width="60sp"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/a_18_drinks"
+                        android:clickable="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="?selectableItemBackground"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@color/grey_002"
+                        android:textSize="10sp"
+                        android:text="Coffee"/>
 
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/A00_Layout005"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone"
-        android:orientation="vertical">
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="-20sp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:paddingRight="20sp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@color/grey_002"
+                        android:textSize="14sp"
+                        android:text="0"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:paddingRight="20sp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@color/grey_002"
+                        android:textSize="14sp"
+                        android:text="0"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:paddingRight="20sp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@color/grey_002"
+                        android:textSize="14sp"
+                        android:text="0"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:padding="5sp"
+                    android:text="Single click to increase a shot, double click to decrease a shot"
+                    android:textColor="@color/grey_002"
+                    android:textSize="10sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="Happiness Index for today"
+                    android:padding="10sp"
+                    android:textColor="@color/grey_001"
+                    android:textSize="12sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@color/grey_002"
+                        android:textSize="12sp"
+                        android:padding="10sp"
+                        android:text="Cheerful"/>
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:button="@drawable/happiness_index_01"/>
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:button="@drawable/happiness_index_02"/>
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:button="@drawable/happiness_index_03"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@color/grey_002"
+                        android:textSize="12sp"
+                        android:padding="10sp"
+                        android:text="Despair"/>
+                </LinearLayout>
+            </LinearLayout>
 
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/A00_Layout003"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/A00_Layout004"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/A00_Layout005"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

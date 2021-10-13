@@ -14,4 +14,7 @@
     <color name="icon_002">#3CB29D</color>
     <color name="icon_003">#00BCD4</color>
     <color name="icon_004">#4CAF50</color>
+
+    <color name="white_001">#EDEDED</color>
+    <color name="white_002">#CCCCCC</color>
 </resources>
