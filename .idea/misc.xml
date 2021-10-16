@@ -4,8 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable-v24/a_23_happy.xml" value="0.23941368078175895" />
+        <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable-v24/a_31_pills.xml" value="0.23941368078175895" />
+        <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable-v24/border_line_02.xml" value="0.23941368078175895" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable-v24/happiness_index_switch_03.xml" value="0.23941368078175895" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable-v24/indifferent_switch.xml" value="0.23941368078175895" />
+        <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable-v24/pills_switch.xml" value="0.23941368078175895" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable-v24/star_11.xml" value="0.275" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable-v24/star_12.xml" value="0.275" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable-v24/star_13.xml" value="0.275" />
@@ -14,12 +17,15 @@
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_02_exercise.xml" value="0.275" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_03_book.xml" value="0.275" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_04_entertainment.xml" value="0.275" />
+        <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_05_health.xml" value="0.18388157894736842" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_10_tea.xml" value="0.26805555555555555" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_11_health.xml" value="0.26805555555555555" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_12_drinks.xml" value="0.26805555555555555" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_14_drinks.xml" value="0.26805555555555555" />
+        <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_15_notes.xml" value="0.23941368078175895" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_16_notes.xml" value="0.26805555555555555" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_17_drinks.xml" value="0.26805555555555555" />
+        <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_17_notes.xml" value="0.23941368078175895" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_18_drinks.xml" value="0.26805555555555555" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_19_drinks.xml" value="0.26805555555555555" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_20_indifferent.xml" value="0.23941368078175895" />
@@ -27,8 +33,14 @@
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_22_happy.xml" value="0.23941368078175895" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_24_sad.xml" value="0.23941368078175895" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_25_sad.xml" value="0.23941368078175895" />
+        <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_30_pills.xml" value="0.23941368078175895" />
+        <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_32_tree.xml" value="0.23941368078175895" />
+        <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_33_tree.xml" value="0.23941368078175895" />
+        <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_34_bird.xml" value="0.23941368078175895" />
+        <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/a_35_plant.xml" value="0.23941368078175895" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/back.xml" value="0.23941368078175895" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/border_line.xml" value="0.218359375" />
+        <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/border_line_02.xml" value="0.23941368078175895" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/done.xml" value="0.2911458333333333" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/happiness_index_03.xml" value="0.23941368078175895" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/happiness_index_switch_03.xml" value="0.23941368078175895" />
@@ -42,10 +54,11 @@
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/star_02.xml" value="0.2763888888888889" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/star_03.xml" value="0.2763888888888889" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/star_11.xml" value="0.23941368078175895" />
+        <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/star_12.xml" value="0.23941368078175895" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/star_13.xml" value="0.23941368078175895" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/star_checkbox_switch.xml" value="0.2763888888888889" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/drawable/star_switch_10.xml" value="0.23941368078175895" />
-        <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/layout/a_insert.xml" value="0.2361111111111111" />
+        <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/layout/a_insert.xml" value="0.23002084781097984" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Kriis/AndroidStudioProjects/Diary/app/src/main/res/layout/f_insert01.xml" value="0.275" />
       </map>
